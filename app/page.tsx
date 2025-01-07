@@ -25,13 +25,33 @@ export default function Page() {
             , brought to you by Vercel.
           </p>
           <p className="text-slate-500">Aluna: Júlia Kuroishi</p> {/* para personalizar um pouco o exercicio */}
+
+          {/* ------------ Área dos botões de LINK ------------------ */}
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
+          <Link 
+            href='https://nextjs.org/learn/dashboard-app'
+            target='blank'
+             className="flex items-center gap-5 self-start bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-lg shadow"
+          >
+          <span>O tutorial para aprender está aqui</span> <ArrowRightIcon className="w-5 md:w-6" />
+            </Link>
+            <Link 
+            href='https://v1.tailwindcss.com/components'
+            target='blank'
+             className="flex items-center gap-5 self-start bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+          >
+          <span>E o link do Tailwind para personalizar aqui</span> <ArrowRightIcon className="w-5 md:w-6" />
+            </Link>
         </div>
+        {/* ------------ / Área dos botões de LINK ------------------ */}
+
+
+         {/* ------------ Área da imagem lateral  --------------------*/}
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
           <Image
@@ -48,6 +68,8 @@ export default function Page() {
         className="block md:hidden" // mobile=apresenta a imagem em bloco | desktop: esconde
         alt="Screenshots of the dashboard project showing desktop version"
       />
+
+       {/* ------------ / Área da imagem lateral  --------------------*/}
         </div>
       </div>
     </main>
