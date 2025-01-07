@@ -1,3 +1,4 @@
+
 'use client'
 
 // Componente Funcional (exemplo)
@@ -53,5 +54,6 @@ class MyComponent extends React.Component<{}, { visibility: boolean }>  {
 
 
 export default MyComponent;
+
 
 

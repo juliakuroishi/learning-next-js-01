@@ -1,5 +1,4 @@
-//configurações iniciais
-'use client'
+
 
 import React from 'react';
 
@@ -55,3 +54,4 @@ class Counter extends React.Component <{}, EstadoDosComponentes> {
 
 
   export default Counter;
+
