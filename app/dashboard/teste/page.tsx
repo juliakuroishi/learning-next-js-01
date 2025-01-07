@@ -4,23 +4,8 @@
 import React from 'react';
 
 
-// const MyComponent = () => {
-//   const [text, setText] = useState("Hello");
-
-//   const handleClick = () => {
-//     setText("You clicked!");
-//   };
-
-//   return (
-//     <div>
-//       <button onClick={handleClick}>Click Me</button>
-//       <h1>{text}</h1>
-//     </div>
-//   );
-// };
-
-class MyComponent extends React.Component {
-  constructor(props) {
+class MyComponent extends React.Component<{}, { visibility: boolean }>  {
+  constructor(props: {}) {
     super(props);
     this.state = {
       visibility: false

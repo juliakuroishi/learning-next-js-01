@@ -3,10 +3,13 @@
 
 import React from 'react';
 
+interface EstadoDosComponentes {
+  count: number;
+}
 
 // a classe do contador em si
-class Counter extends React.Component {
-    constructor(props) {
+class Counter extends React.Component <{}, EstadoDosComponentes> {
+    constructor(props: {}) {
       super(props);
       this.state = {
         count: 0  //iniciar o estado inicial do contador com zero
